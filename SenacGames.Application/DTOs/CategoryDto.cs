@@ -9,23 +9,24 @@ namespace SenacGames.Application.DTOs
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
 
-        //<Summary>
-        //Quantidade de games nesta categoria
-        //Útil para mostrar no dashboard e na listagem.
-        //<Summary>
+        ///<Summary>
+        ///Quantidade de games nesta categoria
+        ///Útil para mostrar no dashboard e na listagem.
+        ///<Summary>
         public int GameCount { get; set; }
     }
-    //<Summary>
-    //DTO Para criação de uma nova categoria
-    //<Summary>
+    ///<Summary>
+    /// <summary>
+    /// DTO Para criação de uma nova categoria
+    ///<Summary>
     public class CreateCategoryDto
     {
         public string Name { get; set; } = string.Empty;
        
     }
-    //<Summary>
-    //DTO para atualização de uma categoria existente
-    //<Summary>
+    ///<Summary>
+    ///DTO para atualização de uma categoria existente
+    ///<Summary>
     public class UpdateCategoryDto
     {
          public string Name { get; set; } = string.Empty;
