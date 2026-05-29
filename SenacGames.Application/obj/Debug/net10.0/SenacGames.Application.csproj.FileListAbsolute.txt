@@ -1,0 +1,15 @@
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\bin\Debug\net10.0\SenacGames.Application.deps.json
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\bin\Debug\net10.0\SenacGames.Application.dll
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\bin\Debug\net10.0\SenacGames.Application.pdb
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\bin\Debug\net10.0\SenacGames.Domain.dll
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\bin\Debug\net10.0\SenacGames.Domain.pdb
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\obj\Debug\net10.0\SenacGames.Application.csproj.AssemblyReference.cache
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\obj\Debug\net10.0\SenacGames.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\obj\Debug\net10.0\SenacGames.Application.AssemblyInfoInputs.cache
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\obj\Debug\net10.0\SenacGames.Application.AssemblyInfo.cs
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\obj\Debug\net10.0\SenacGames.Application.csproj.CoreCompileInputs.cache
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\obj\Debug\net10.0\SenacGam.2176DF24.Up2Date
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\obj\Debug\net10.0\SenacGames.Application.dll
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\obj\Debug\net10.0\refint\SenacGames.Application.dll
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\obj\Debug\net10.0\SenacGames.Application.pdb
+C:\Users\graziella.ssilva\source\repos\SenacGames\SenacGames.Application\obj\Debug\net10.0\ref\SenacGames.Application.dll

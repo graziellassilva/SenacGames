@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "SenacGames.Application/1.0.0": {
+        "dependencies": {
+          "SenacGames.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SenacGames.Application.dll": {}
+        }
+      },
+      "SenacGames.Domain/1.0.0": {
+        "runtime": {
+          "SenacGames.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SenacGames.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SenacGames.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
