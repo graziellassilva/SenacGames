@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SenacGames.Application.Services
 {
-    internal class CategoryService
+    public class CategoryService
     {
     }
 }
