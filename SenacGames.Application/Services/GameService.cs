@@ -1,19 +1,18 @@
-﻿using SenacGames.Application.DTOs;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using SenacGames.Application.DTOs;
 using SenacGames.Application.Interfaces;
 using SenacGames.Domain.Entities;
 using SenacGames.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Reflection;
-using System.Text;
 using static System.Net.WebRequestMethods;
 
 namespace SenacGames.Application.Services
-{       
+{
     public class GameService : IGameService
     {
-         public readonly IGameRepository _gameRepository;
-        
+        private readonly IGameRepository _gameRepository;
+
         public GameService(IGameRepository gameRepository)
         {
             _gameRepository = gameRepository;
@@ -24,12 +23,13 @@ namespace SenacGames.Application.Services
             var games = await _gameRepository.GetAllAsync();
             return games.Select(MapToDto);
         }
-            
+
         public async Task<GameDto?> GetByIdAsync(int id)
         {
-            var game =await _gameRepository.GetByIdAsync(id);
+            var game = await _gameRepository.GetByIdAsync(id);
             return game == null ? null : MapToDto(game);
         }
+
         public async Task<IEnumerable<GameDto>> GetFeaturedAsync()
         {
             var games = await _gameRepository.GetFeaturedAsync();
@@ -41,6 +41,7 @@ namespace SenacGames.Application.Services
             var games = await _gameRepository.GetByCategoryAsync(categoryId);
             return games.Select(MapToDto);
         }
+
         public async Task<GameDto> CreateAsync(CreateGameDto dto)
         {
             //Mapeia o DTO de criação para a entidade Game
@@ -54,11 +55,13 @@ namespace SenacGames.Application.Services
                 IsFeatured = dto.IsFeatured,
                 CreatedAt = DateTime.Now
             };
+
             await _gameRepository.AddAsync(game);
 
             //Retorna o game criado como DTO
             return MapToDto(game);
         }
+
         public async Task<GameDto?> UpdateAsync(int id, UpdateGameDto dto)
         {
             var game = await _gameRepository.GetByIdAsync(id);
@@ -69,7 +72,7 @@ namespace SenacGames.Application.Services
             game.ReleaseYear = dto.ReleaseYear;
             game.CoverImageUrl = dto.CoverImageUrl;
             game.CategoryId = dto.CategoryId;
-           game.IsFeatured = dto.IsFeatured;
+            game.IsFeatured = dto.IsFeatured;
 
             await _gameRepository.UpdateAsync(game);
             return MapToDto(game);
@@ -81,17 +84,18 @@ namespace SenacGames.Application.Services
             var game = await _gameRepository.GetByIdAsync(id);
             if (game == null)
             {
-                return false; 
-
+                return false;
             }
-                
+
             await _gameRepository.DeleteAsync(id);
             return true;
         }
+
         public async Task<int> CountAsync()
         {
             return await _gameRepository.CountAsync();
         }
+
         private static GameDto MapToDto(Game game)
         {
             return new GameDto
@@ -106,16 +110,10 @@ namespace SenacGames.Application.Services
                 IsFeatured = game.IsFeatured,
                 CreatedAt = game.CreatedAt
             };
+
         }
 
-        public Task<IEnumerable<GameDto>> GetAllsync()
-        {
-            throw new NotImplementedException();
-        }
 
-        public Task<GameDto> CreateAsync(GameDto dto)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }

@@ -1,4 +1,4 @@
-@SenacGames.API_HostAddress = http://localhost:5043
+@SenacGames.API_HostAddress = http://localhost:5227
 
 GET {{SenacGames.API_HostAddress}}/weatherforecast/
 Accept: application/json

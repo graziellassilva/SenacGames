@@ -22,13 +22,13 @@ namespace SenacGames.Domain.Interfaces
     public interface IGameRepository
     {
         /// <summary>
-        /// Retorna todos os games do banco de dados.
+        /// Retorna todos os games existentes no banco de dados.
         /// </summary>
         Task<IEnumerable<Game>> GetAllAsync();
 
         /// <summary>
         /// Busca um game específico pelo seu Id.
-        /// Retorna null se não encontrar.
+        /// Retorna null (nulo) se não encontrar.
         /// </summary>
         Task<Game?> GetByIdAsync(int id);
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using SenacGames.Application.DTOs;
-using SenacGames.Application.Interfaces;
+using SenacGames.Domain.Entities;
 
 namespace SenacGames.Application.Interfaces
 {
@@ -13,7 +13,7 @@ namespace SenacGames.Application.Interfaces
     {
         Task<IEnumerable<CategoryDto>> GetAllAsync();
         Task<CategoryDto?> GetByIdAsync(int id);
-        Task<CategoryDto> CreateAsync(CategoryDto dto);
+        Task<CategoryDto> CreateAsync(CreateCategoryDto dto);
         Task<CategoryDto?> UpdateAsync(int id, UpdateCategoryDto dto);
         Task<bool> DeleteAsync(int id);
         Task<int> CountAsync();

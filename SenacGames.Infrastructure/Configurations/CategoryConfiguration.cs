@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-
 namespace SenacGames.Infrastructure.Configurations
 {
     public class CategoryConfiguration : IEntityTypeConfiguration<Category>
@@ -17,7 +16,8 @@ namespace SenacGames.Infrastructure.Configurations
             builder.Property(c => c.Name)
                 .IsRequired()
                 .HasMaxLength(100);
-
         }
+        
+    
     }
 }

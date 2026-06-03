@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SenacGames.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64ef5acff4dc8f6c350b874536560c8cf3ace7e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9babf15b94ca5fcccb832968e501befb59f8b29d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SenacGames.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SenacGames.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
