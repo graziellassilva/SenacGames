@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\graziella.ssilva\\source\\repos\\SenacGames\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3CDA8582-182B-416F-A77E-B68237FA6101}|SenacGames.Infrastructure\\SenacGames.Infrastructure.csproj|c:\\users\\graziella.ssilva\\source\\repos\\senacgames\\senacgames.infrastructure\\identity\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CDA8582-182B-416F-A77E-B68237FA6101}|SenacGames.Infrastructure\\SenacGames.Infrastructure.csproj|solutionrelative:senacgames.infrastructure\\identity\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\graziella.ssilva\\source\\repos\\SenacGames\\SenacGames.Infrastructure\\Identity\\SeedData.cs",
+              "RelativeDocumentMoniker": "SenacGames.Infrastructure\\Identity\\SeedData.cs",
+              "ToolTip": "C:\\Users\\graziella.ssilva\\source\\repos\\SenacGames\\SenacGames.Infrastructure\\Identity\\SeedData.cs",
+              "RelativeToolTip": "SenacGames.Infrastructure\\Identity\\SeedData.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAE8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T20:03:55.973Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
