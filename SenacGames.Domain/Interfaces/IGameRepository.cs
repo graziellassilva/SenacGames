@@ -1,65 +1,36 @@
-﻿// =============================================================================
-// SenacGames.Domain - Interface IGameRepository
-// =============================================================================
-// 📌 CONCEITO IMPORTANTE:
-// Uma INTERFACE define um CONTRATO - ela diz O QUE deve ser feito,
-// mas NÃO diz COMO fazer. A implementação fica em outra camada.
-//
-// Isso é fundamental na arquitetura em camadas:
-// - O Domain DEFINE a interface (o contrato)
-// - O Infrastructure IMPLEMENTA a interface (o código real)
-// - Isso permite trocar a implementação sem alterar o resto do sistema
-// =============================================================================
-
-using SenacGames.Domain.Entities;
+﻿using SenacGames.Domain.Entities;
 
 namespace SenacGames.Domain.Interfaces
 {
-    /// <summary>
-    /// Contrato do repositório de Games.
-    /// Define as operações disponíveis para acessar dados de games.
-    /// </summary>
+    // Interface com os métodos para trabalhar com jogos
     public interface IGameRepository
     {
-        /// <summary>
-        /// Retorna todos os games existentes no banco de dados.
-        /// </summary>
+        // Task = operação assíncrona
+        // IEnumerable = lista de jogos
+
+        // Lista todos os jogos
         Task<IEnumerable<Game>> GetAllAsync();
 
-        /// <summary>
-        /// Busca um game específico pelo seu Id.
-        /// Retorna null (nulo) se não encontrar.
-        /// </summary>
+        // Busca um jogo pelo ID
+        // Pode retornar um Game ou null
         Task<Game?> GetByIdAsync(int id);
 
-        /// <summary>
-        /// Retorna apenas os games marcados como destaque (IsFeatured = true).
-        /// </summary>
+        // Lista os jogos em destaque
         Task<IEnumerable<Game>> GetFeaturedAsync();
 
-        /// <summary>
-        /// Retorna todos os games de uma categoria específica.
-        /// </summary>
+        // Lista os jogos de uma categoria
         Task<IEnumerable<Game>> GetByCategoryAsync(int categoryId);
 
-        /// <summary>
-        /// Adiciona um novo game ao banco de dados.
-        /// </summary>
+        // Adiciona um jogo
         Task AddAsync(Game game);
 
-        /// <summary>
-        /// Atualiza os dados de um game existente.
-        /// </summary>
+        // Atualiza um jogo
         Task UpdateAsync(Game game);
 
-        /// <summary>
-        /// Remove um game do banco de dados.
-        /// </summary>
+        // Exclui um jogo
         Task DeleteAsync(int id);
 
-        /// <summary>
-        /// Retorna o total de games cadastrados.
-        /// </summary>
+        // Conta quantos jogos existem
         Task<int> CountAsync();
     }
 }

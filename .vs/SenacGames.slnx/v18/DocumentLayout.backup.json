@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\graziella.ssilva\\source\\repos\\SenacGames\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7FF7E640-672E-4431-8A18-CC8DF2740056}|SenacGames.Domain\\SenacGames.Domain.csproj|c:\\users\\graziella.ssilva\\source\\repos\\senacgames\\senacgames.domain\\entities\\games.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FF7E640-672E-4431-8A18-CC8DF2740056}|SenacGames.Domain\\SenacGames.Domain.csproj|solutionrelative:senacgames.domain\\entities\\games.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7FF7E640-672E-4431-8A18-CC8DF2740056}|SenacGames.Domain\\SenacGames.Domain.csproj|c:\\users\\graziella.ssilva\\source\\repos\\senacgames\\senacgames.domain\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FF7E640-672E-4431-8A18-CC8DF2740056}|SenacGames.Domain\\SenacGames.Domain.csproj|solutionrelative:senacgames.domain\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95EFD883-801E-438B-8FEA-FAFB8BAEA8F0}|SenacGames.UI\\SenacGames.UI.csproj|c:\\users\\graziella.ssilva\\source\\repos\\senacgames\\senacgames.ui\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95EFD883-801E-438B-8FEA-FAFB8BAEA8F0}|SenacGames.UI\\SenacGames.UI.csproj|solutionrelative:senacgames.ui\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CDA8582-182B-416F-A77E-B68237FA6101}|SenacGames.Infrastructure\\SenacGames.Infrastructure.csproj|c:\\users\\graziella.ssilva\\source\\repos\\senacgames\\senacgames.infrastructure\\identity\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CDA8582-182B-416F-A77E-B68237FA6101}|SenacGames.Infrastructure\\SenacGames.Infrastructure.csproj|solutionrelative:senacgames.infrastructure\\identity\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,15 +22,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Games.cs",
+              "DocumentMoniker": "C:\\Users\\graziella.ssilva\\source\\repos\\SenacGames\\SenacGames.Domain\\Entities\\Games.cs",
+              "RelativeDocumentMoniker": "SenacGames.Domain\\Entities\\Games.cs",
+              "ToolTip": "C:\\Users\\graziella.ssilva\\source\\repos\\SenacGames\\SenacGames.Domain\\Entities\\Games.cs",
+              "RelativeToolTip": "SenacGames.Domain\\Entities\\Games.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T19:12:21.142Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ICategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\graziella.ssilva\\source\\repos\\SenacGames\\SenacGames.Domain\\Interfaces\\ICategoryRepository.cs",
               "RelativeDocumentMoniker": "SenacGames.Domain\\Interfaces\\ICategoryRepository.cs",
@@ -43,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\graziella.ssilva\\source\\repos\\SenacGames\\SenacGames.UI\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "SenacGames.UI\\Controllers\\AdminController.cs",
@@ -52,18 +65,6 @@
               "ViewState": "AgIAAOMAAAAAAAAAAAAswAUBAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T16:52:38.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\graziella.ssilva\\source\\repos\\SenacGames\\SenacGames.Infrastructure\\Identity\\SeedData.cs",
-              "RelativeDocumentMoniker": "SenacGames.Infrastructure\\Identity\\SeedData.cs",
-              "ToolTip": "C:\\Users\\graziella.ssilva\\source\\repos\\SenacGames\\SenacGames.Infrastructure\\Identity\\SeedData.cs",
-              "RelativeToolTip": "SenacGames.Infrastructure\\Identity\\SeedData.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAACIAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-03T20:03:55.973Z"
             }
           ]
         }

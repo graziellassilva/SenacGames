@@ -19,47 +19,52 @@ namespace SenacGames.Domain.Entities
     /// </summary>
     public class Game
     {
-        /// <summary>
-        /// Identificador único do game (chave primária).
-        /// O Entity Framework gera automaticamente esse valor.
-        /// </summary>
+       /// <summary>
+       /// ID único do jogo
+       /// </summary>
         public int Id { get; set; }
 
         /// <summary>
-        /// Título do game. Exemplo: "God of War Ragnarök"
+        /// Nome do jogo
         /// </summary>
         public string Title { get; set; } = string.Empty;
 
         /// <summary>
-        /// Descrição detalhada do game.
+        /// Descrição do jogo
         /// </summary>
         public string Description { get; set; } = string.Empty;
 
         /// <summary>
-        /// Ano de lançamento do game.
+        /// Ano de lançamento do jogo
         /// </summary>
         public int ReleaseYear { get; set; }
 
         /// <summary>
-        /// URL da imagem de capa do game.
+        /// Link da imagem de capa
         /// </summary>
         public string CoverImageUrl { get; set; } = string.Empty;
 
         /// <summary>
-        /// Chave estrangeira (FK) que relaciona o game com uma categoria.
-        /// 📌 CONCEITO: Foreign Key - conecta duas tabelas no banco de dados.
+        /// ID da categoria do jogo
+        ///  FK = liga o jogo à categoria
         /// </summary>
+
         public int CategoryId { get; set; }
 
         /// <summary>
-        /// Indica se o game está em destaque na página inicial.
+        ///  Define se o jogo aparece em destaque
         /// </summary>
         public bool IsFeatured { get; set; }
 
         /// <summary>
-        /// Data de criação do registro no banco de dados.
+        /// Data de cadastro do jogo
         /// </summary>
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        // Categoria deste jogo
+        // virtual = carrega os dados relacionados
+        // ? = pode ser nulo
+        public virtual Category? Category { get; set; }
 
         // =====================================================================
         // NAVIGATION PROPERTY (Propriedade de Navegação)
@@ -69,10 +74,5 @@ namespace SenacGames.Domain.Entities
         // automaticamente os dados relacionados de outra tabela.
         // Aqui, cada Game "navega" até sua Category correspondente.
         // =====================================================================
-
-        /// <summary>
-        /// Categoria à qual este game pertence (propriedade de navegação).
-        /// </summary>
-        public virtual Category? Category { get; set; }
     }
 }
