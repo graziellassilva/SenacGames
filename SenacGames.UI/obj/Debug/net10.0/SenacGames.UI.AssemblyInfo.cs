@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SenacGames.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f0f72f0ac3af8bc944edec8aab066a619fb9625")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6387d773d8a8568afd60a08eef2de41a499e1fca")]
 [assembly: System.Reflection.AssemblyProductAttribute("SenacGames.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SenacGames.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
