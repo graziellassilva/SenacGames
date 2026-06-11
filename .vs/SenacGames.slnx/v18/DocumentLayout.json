@@ -30,8 +30,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,14 +44,10 @@
               "RelativeDocumentMoniker": "SenacGames.UI\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\graziella.ssilva\\source\\repos\\SenacGames\\SenacGames.UI\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "SenacGames.UI\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAswDIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-10T17:13:13.63Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -59,8 +59,7 @@
               "RelativeToolTip": "SenacGames.UI\\Controllers\\AccountController.cs",
               "ViewState": "AgIAAF4AAAAAAAAAAAAAAI8AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T19:24:16.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-08T19:24:16.179Z"
             },
             {
               "$type": "Document",
@@ -97,6 +96,16 @@
               "ViewState": "AgIAAOMAAAAAAAAAAAAswAUBAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T16:52:38.673Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1881,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
