@@ -3618,6 +3618,7 @@
     "net10.0": [
       "Microsoft.AspNetCore.OpenApi >= 10.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.8",
+      "Microsoft.OpenApi >= 2.4.1",
       "SenacGames.Application >= 1.0.0",
       "SenacGames.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 10.1.7"
@@ -3690,6 +3691,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[10.0.8, )"
+          },
+          "Microsoft.OpenApi": {
+            "target": "Package",
+            "version": "[2.4.1, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

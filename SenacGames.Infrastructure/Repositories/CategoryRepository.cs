@@ -1,13 +1,20 @@
-﻿using Microsoft.EntityFrameworkCore;
+// =============================================================================
+// SenacGames.Infrastructure - CategoryRepository
+// =============================================================================
+// Implementação do repositório de categorias.
+// Segue o mesmo padrão do GameRepository.
+// =============================================================================
+
+using Microsoft.EntityFrameworkCore;
 using SenacGames.Domain.Entities;
 using SenacGames.Domain.Interfaces;
 using SenacGames.Infrastructure.Context;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SenacGames.Infrastructure.Repositories
 {
+    /// <summary>
+    /// Implementação do repositório de Categorias usando Entity Framework Core.
+    /// </summary>
     public class CategoryRepository : ICategoryRepository
     {
         private readonly SenacGamesDbContext _context;
@@ -20,18 +27,18 @@ namespace SenacGames.Infrastructure.Repositories
         public async Task<IEnumerable<Category>> GetAllAsync()
         {
             return await _context.Categories
-                 .Include(c => c.Games) // Inclui os games para contar
-                 .OrderBy(c => c.Name) // Ordena as categorias por nome
-                 .ToListAsync();
+                .Include(c => c.Games) // Inclui os games para contar
+                .OrderBy(c => c.Name)
+                .ToListAsync();
         }
 
         public async Task<Category?> GetByIdAsync(int id)
         {
             return await _context.Categories
-                .Include(c => c.Games) // Faz JOIN com a tabrla Categories
-                .FirstOrDefaultAsync(c => c.Id == id); // Busca o jogo pelo ID
-
+                .Include(c => c.Games)
+                .FirstOrDefaultAsync(c => c.Id == id);
         }
+
         public async Task AddAsync(Category category)
         {
             await _context.Categories.AddAsync(category);
@@ -40,7 +47,7 @@ namespace SenacGames.Infrastructure.Repositories
 
         public async Task UpdateAsync(Category category)
         {
-            _context.Categories.Update(category); //o Update não necessita de await pois ele apenas marca a entidade como modificada, sem realizar uma operação assíncrona
+            _context.Categories.Update(category);
             await _context.SaveChangesAsync();
         }
 
@@ -58,6 +65,5 @@ namespace SenacGames.Infrastructure.Repositories
         {
             return await _context.Categories.CountAsync();
         }
-
     }
 }

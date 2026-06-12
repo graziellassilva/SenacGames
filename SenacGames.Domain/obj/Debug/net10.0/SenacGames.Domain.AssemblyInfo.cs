@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SenacGames.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c9cb6076cc782c3dba9bd2d9b131031e7ed8e26")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+203c82e980f66a943233533d86a26ef2a3424c2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("SenacGames.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SenacGames.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

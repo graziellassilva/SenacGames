@@ -48,4 +48,11 @@ namespace SenacGames.Application.ViewModels
         public IEnumerable<CategoryDto> Categories { get; set; } = new List<CategoryDto>();
         public int? SelectedCategoryId { get; set; }
     }
+
+    // Error view model usado pela view Views/Shared/Error.cshtml
+    public class ErrorViewModel
+    {
+        public string? RequestId { get; set; }
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    }
 }
